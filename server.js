@@ -3,12 +3,12 @@ const cors = require("cors");
 
 const app = express();
 
-var corOptions = {
-  origin: "http://localhost:3000",
-};
+// var corOptions = {
+//   origin: "http://localhost:3000",
+// };
 
 // middleware
-app.use(cors(corOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 // port
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // server
 app.listen(PORT, () => {
