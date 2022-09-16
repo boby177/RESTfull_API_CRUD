@@ -20,12 +20,12 @@ const AddProduct = () => {
     };
     await axios.post("product/addProduct", data);
     alert(`Product ${data.title} added to list`);
-    window.location.replace("/products")
+    window.location.replace("/")
   };
 
   return (
     <>
-      <Container className="mt-5 p-2">
+      <Container className="m-7 p-5">
         <h1 className="text-center">Add New Product</h1>
         <hr />
         <Form onSubmit={addProductHandler}>

@@ -3,10 +3,6 @@ const cors = require("cors");
 
 const app = express();
 
-// var corOptions = {
-//   origin: "http://localhost:3000",
-// };
-
 // middleware
 app.use(cors());
 app.use(express.json());

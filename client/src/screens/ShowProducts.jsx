@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
+import { Link } from "react-router-dom";
 
 const ShowProducts = () => {
   const [products, setProducts] = useState([]);
@@ -17,10 +18,13 @@ const ShowProducts = () => {
 
   return (
     <>
-      <Container className="m-5 p-2">
-        <h1 className="text-center">Show All Products</h1>
+      <Container className="m-7 p-5">
+        <h1 className="text-center">Welcome to My Shop</h1>
+        <Link to={'/addProduct'}>
+        <Button variant="outline-dark" size="sm">Add Product</Button>
+        </Link>
         <hr />
-        <Row xs={1} md={3} className="g-4 justify-content-center">
+        <Row sm={1} md={2} lg={3} className="g-4 justify-content-center">
           {products.map((product) => {
             return (
               <Col key={product.id}>
