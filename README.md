@@ -9,3 +9,6 @@ RESTfull api crud project using sequelize nodejs, mysql, and reactjs
 
 ## Show all product from client view
 ![thumbs3](https://github.com/boby177/RESTfull_API_CRUD/blob/main/img_thumbs/Screenshot_5.png)
+
+## Detail product and give review to a product
+![thumbs3](https://github.com/boby177/RESTfull_API_CRUD/blob/main/img_thumbs/Screenshot_6.png)
